@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script async defer src="script.js"></script>
+</head>
+<body>
+    <div class="register-button-container">
+        <button class="register-button" id="register" onclick="register()">Register</button>
+    </div>
+    <div class="scan-card-info">
+        <div id="info-text">
+            Please scan your ID Card.
+        </div>
+        <div id="error-text">
+            Registration failed. Please try again.
+        </div>
+    </div>
+
+    <div id="after-photo-capture-info">
+        <div id="success">
+            Registration successful.
+        </div>
+        <div id="error">
+            Please make sure your face is visible and try again.
+        </div>
+    </div>
+
+
+    <div class="camera-container">
+        <div id="video-container">
+            <video id="video" class="media" autoplay></video>
+            <button id="click-photo">Click Photo</button>
+        </div>
+        <div id="canvas-container">
+            <canvas id="canvas" class="media"></canvas>
+        </div>
+    </div>
+</body>
+</html>
